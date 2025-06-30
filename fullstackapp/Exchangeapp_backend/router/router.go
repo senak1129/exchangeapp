@@ -23,7 +23,7 @@ func SetupRouter() *gin.Engine {
 		api.GET("/articles/:id", controllers.GetArticlesById)
 
 		api.POST("/articles/:id/like", controllers.LikeArticle)
-		api.GET("/articles/:id/like", controllers.GetArticle)
+		api.GET("/articles/:id/like", controllers.GetArticleLikes)
 	}
 	return r
 }
